@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RazorPage_SelectedScaffolderID>RazorPageScaffolder</RazorPage_SelectedScaffolderID>
+    <RazorPage_SelectedScaffolderCategoryPath>root/Common/RazorPage</RazorPage_SelectedScaffolderCategoryPath>
+    <NameOfLastUsedPublishProfile>E:\Projects\NetCore\KSP\KSP3500\KSPRecruitment_CPC3500\KSPRecruitment\Properties\PublishProfiles\FolderProfile3.pubxml</NameOfLastUsedPublishProfile>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Reports\BankChallanKSPCPC3500.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Reports\CallLetterKSPCPC3500.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Reports\FinalApplication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Reports\KSP3533.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Reports\Postofficereport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

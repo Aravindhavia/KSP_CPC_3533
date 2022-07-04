@@ -1,0 +1,91 @@
+.alert1 {
+    padding: 10px;
+    background-color: #01c21b;
+    color: white;
+    width:20%;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    border-radius: 5px;
+  }
+  .alert2 {
+      padding: 10px;
+      background-color: #fbff00;
+      color: #000000;
+      width:20%;
+      position: absolute;
+      right: 0;
+      top: 20%;
+      border-radius: 5px;
+  }
+  .alert3 {
+      padding: 10px;
+      background-color: #2382ff;
+      color: white;
+      width:20%;
+      position: absolute;
+      right: 0;
+      top: 25%;
+      border-radius: 5px;
+  }
+  .alert4 {
+      padding: 10px;
+      background-color: #da072c;
+      color: white;
+      width:20%;
+      position: absolute;
+      right: 0;
+      top: 30%;
+      border-radius: 5px;
+  }
+  
+  .alert1, .alert2, .alert3, .alert4{
+      animation: show_slide 3s ease forwards;
+  } 
+  @keyframes show_slide{
+      0%{
+          transform: translateX(100%);
+      }
+      40%{
+          transform: translateX(-10%);
+      }
+      80%{
+          transform: translateX(-5%);
+      }
+      100%{
+          transform: translateX(-10%);
+      }
+  }
+
+  .alert1, .alert2, .alert3, .alert4{
+      animation: hide_slide 5s ease forwards;
+  } 
+
+  @keyframes hide_slide{
+      0%{
+          transform: translateX(-10%);
+      }
+      40%{
+          transform: translateX(-5%);
+      }
+      80%{
+          transform: translateX(-10%);
+      }
+      100%{
+          visibility: hidden;
+      }
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

@@ -1,0 +1,270 @@
+.srb-ap-form h3 {
+    font-size: 20px;
+    color:#fff;
+}
+
+.srb-ap-form .nice-select {
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom:10px;
+}
+
+.srb-ap-form .nice-select:after {
+    height: 8px;
+    width: 8px;
+    right: 23px;
+    border-color: #000024;
+}
+
+.srb-ap-form .nice-select .current {
+    position: relative;
+    top: 4px;
+    color: #495057;
+}
+
+.srb-ap-form .form-group {
+    margin-bottom: 15px;
+}
+
+.srb-ap-form .form-group .form-control::-webkit-input-placeholder {
+    line-height: 1;
+    position: relative;
+    top: -1px;
+}
+
+.srb-ap-form .form-group .form-control:-ms-input-placeholder {
+    line-height: 1;
+    position: relative;
+    top: -1px;
+}
+
+.srb-ap-form .form-group .form-control::-ms-input-placeholder {
+    line-height: 1;
+    position: relative;
+    top: -1px;
+}
+
+.srb-ap-form .form-group .form-control::placeholder {
+    line-height: 1;
+    position: relative;
+    top: -1px;
+}
+
+.srb-ap-form form label {
+   
+    font-size: 13px;
+    padding-left: 5px;
+    font-weight: 600;
+    color: #07539d;
+}
+
+.form-p-srb-p {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(41, 38, 38);
+}
+
+.single-check {
+    display: block;
+    position: relative;
+    padding-left: 20px !important;
+    margin-bottom: 10px !important;
+    cursor: pointer;
+    font-size: 14px !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-p-srb {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-p-srb span {
+    font-weight: 700;
+    color: #495057 !important;
+}
+
+.custom-control.teleport-switch {
+    --color: #4cd964;
+    padding-left: 0;
+    width: auto;
+    margin-left: 15px;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input {
+    display: none;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator {
+    border-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator::after {
+    left: -14px;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator::before {
+    right: 2px;
+    background-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:disabled~.teleport-switch-control-indicator {
+    opacity: .4;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    top: 4px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    top: 2px;
+    left: 2px;
+    background: #ccc;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    top: 2px;
+    right: -14px;
+    background: #ccc;
+}
+
+.srb-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.srb-switch input {
+    display: none;
+}
+
+.srb-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.srb-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.srb-switch input:checked+.slider {
+    background-color: #2ab934;
+}
+
+.srb-switch input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.srb-switch input:checked+.slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+    left: -23px;
+}
+
+
+/*------ ADDED CSS ---------*/
+
+.srb-switch .on {
+    display: none;
+}
+
+.srb-switch .on {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 11px;
+    font-weight: 500;
+    padding-right: 25px;
+    font-family: Verdana, sans-serif;
+}
+
+.srb-switch .off {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 25px;
+    font-family: Verdana, sans-serif;
+}
+
+.srb-switch input:checked+.slider .on {
+    display: block;
+}
+
+.srb-switch input:checked+.slider .off {
+    display: none;
+}
+
+
+/*--------- END --------*/
+
+
+/* Rounded sliders */
+
+.srb-switch .slider.round {
+    border-radius: 34px;
+}
+
+.srb-switch .slider.round:before {
+    border-radius: 50%;
+}
