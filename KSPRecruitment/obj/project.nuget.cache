@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WHQNIzRw2Y4uzFj2CFxweqMwzYCFaA9PLYhVbKImx6/HPTIsFdfe7otVP07Ml2A0gBHRg8bCIGtC1E7zTKw4sw==",
+  "dgSpecHash": "H9ZyhdJrR+TgOUJF/3/rrR627x3G0gz39fZ7VGYqH3yCqtUNfHNsWc6nng+odehw/e2kVz3fpCau4pOwdpPe2A==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\KSPRecruitment.csproj",
+  "projectFilePath": "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\KSPRecruitment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hai\\.nuget\\packages\\devexpress.charts\\19.2.6-pre-20006\\devexpress.charts.19.2.6-pre-20006.nupkg.sha512",
     "C:\\Users\\Hai\\.nuget\\packages\\devexpress.charts.core\\19.2.6-pre-20006\\devexpress.charts.core.19.2.6-pre-20006.nupkg.sha512",

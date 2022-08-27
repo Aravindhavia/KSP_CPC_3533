@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/responsive.css" />
 
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="~/css/cssNotyf/notyf.min.css">
+
     @RenderSection("Styles", false);
 
 </head>
@@ -32,7 +36,7 @@
             <div></div>
         </div>
     </div>
-    
+
     <header class="header-area">
         <!-- Start Top Header -->
         <div class="top-header top-header-three">
@@ -57,7 +61,6 @@
             </div>
         </div>
         <!-- Start Top Header -->
-
         <!-- Start Navbar Area -->
         <div class="navbar-area">
             <div class="desktop-nav">
@@ -66,29 +69,29 @@
                         <a class="navbar-brand" href="index">
                             <img src="~/img/logo.gif" alt="logo">
                         </a>
-                       @* <span class="iso">(ISO : 9001 - 2015 CERTIFIED RECRUITMENT PROCESS)</span>*@
+                        @* <span class="iso">(ISO : 9001 - 2015 CERTIFIED RECRUITMENT PROCESS)</span>*@
 
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="index" class="nav-link active">
-											Home	
-										</a>
+                                        Home
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="index" class="nav-link">
-											Notification	
-										</a>
+                                        Notification
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="instructions" class="nav-link">
+                                        Instruction
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="index" class="nav-link">
-											Instruction		
-										</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index" class="nav-link">
-											Broucher											
-										</a>
+                                        Broucher
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="index" class="nav-link">FAQ</a>
@@ -134,11 +137,9 @@
         <!-- End Navbar Area -->
     </header>
 
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        @RenderBody()
+    </main>
 
     <footer class="footer-area pt-100 pb-70">
         <div class="container">
@@ -148,41 +149,37 @@
                         <a href="index.html" class="logo">
                             <img src="img/logo.jpg" alt="Image">
                         </a>
-
                         <p> Please note that this page also provides links to the websites / web pages of Govt. Ministries/Departments/Organisations. The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion </p>
-
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget">
                         <h3>Services</h3>
-
                         <ul class="import-link">
                             <li>
                                 <a href="#">Notification</a>
                             </li>
                             <li>
                                 <a href="#">
-									Instruction</a>
+                                    Instruction
+                                </a>
                             </li>
                             <li>
                                 <a href="#">
-									Broucher</a>
+                                    Broucher
+                                </a>
                             </li>
                             <li>
                                 <a href="#">
-									FAQ</a>
+                                    FAQ
+                                </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget">
                         <h3>Important Link</h3>
-
                         <ul class="import-link">
                             <li>
                                 <a href="https://ksp.karnataka.gov.in/"> Karnataka State Police </a>
@@ -193,23 +190,16 @@
                             <li>
                                 <a href="https://cvs.recruitment.ksp.gov.in"> DigiLocker </a>
                             </li>
-                        </ul>   
-
+                        </ul>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget">
                         <h3>Address</h3>
-
                         <ul class="address">
                             <li class="location">
                                 <i class="bx bxs-location-plus"></i> Karnataka State Police
                             </li>
-                            @*<li>
-                                <i class="bx bxs-envelope"></i>
-                                <a href="mailto:info@ksp.com">info@ksp.com</a>
-                            </li>*@
                             <li>
                                 <i class="bx bxs-phone-call"></i>
                                 <a href="#">080 2294 3346 / 3039</a>
@@ -255,6 +245,108 @@
     <script src="~/js/ajaxchimp.min.js"></script>
     <!-- Custom JS -->
     <script src="~/js/custom.js"></script>
+
+    <script src="js/sweetalert2.js"></script>
+
+    <script>
+        function login(){
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+            )
+        }
+    </script>
+
+    <script src="~/js/jsNotyf/notyf.min.js"></script>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                notyf.error('@TempData["ErrorMessage"]');
+            });
+        </script>
+    }
+
+    @if (TempData["InfoMessage"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                notyf.open({
+                    type: 'info',
+                    message: '@TempData["InfoMessage"]'
+                });
+            });
+        </script>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                notyf.success('@TempData["SuccessMessage"]');
+            });
+        </script>
+    }
+
+    @if (TempData["WarnMessage"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                notyf.success('@TempData["WarnMessage"]');
+            });
+        </script>
+    }
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+            //alert(pgurl);
+            if (pgurl == "") {
+                $('.nav-link[href="Index"]').parent().addClass("active");
+            }
+
+            $('.sidebar-menu a').each(function () {
+                var href = $(this).attr('href');
+                if (pgurl === href) {
+                    $(this).closest('li').removeClass('active');
+                    $(this).closest('li').addClass('active');
+                    $(this).closest('ul').css('display', 'block');
+                }
+            });
+        });
+
+        let notyf = new Notyf({
+            duration: 5000,
+            dismissible: true,
+            ripple: true,
+            position: {
+                x: 'right', y: 'top'
+            },
+            types: [
+                {
+                    type: 'warning',
+                    background: 'orange',
+                    icon: {
+                        className: 'fa fa-home',
+                        tagName: 'i',
+                        text: ''
+                    }
+                },
+                {
+                    type: 'info',
+                    background: 'blue',
+                    icon: {
+                        className: 'material-icons',
+                        tagName: 'i',
+                        text: 'warning'
+                    }
+                }
+            ]
+        });
+
+    </script>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
 

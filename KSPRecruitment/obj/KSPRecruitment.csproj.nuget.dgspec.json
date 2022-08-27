@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\KSPRecruitment.csproj": {}
+    "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\KSPRecruitment.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\KSPRecruitment.csproj": {
+    "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\KSPRecruitment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\KSPRecruitment.csproj",
+        "projectUniqueName": "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\KSPRecruitment.csproj",
         "projectName": "KSPRecruitment_3500",
-        "projectPath": "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\KSPRecruitment.csproj",
+        "projectPath": "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\KSPRecruitment.csproj",
         "packagesPath": "C:\\Users\\Hai\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\NetCore\\KSP\\KSP3500\\KSPRecruitment_CPC3500\\KSPRecruitment\\obj\\",
+        "outputPath": "E:\\Projects\\github\\KSP_CPC_3533\\KSPRecruitment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Hai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
